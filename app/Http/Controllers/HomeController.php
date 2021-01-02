@@ -11,6 +11,7 @@ class HomeController extends Controller
     public function index ($locale) 
     {
         echo "PPPPPPP";
+        echo "OOOOOOOOO";
 		return view('home', compact('locale'));
     }
 }

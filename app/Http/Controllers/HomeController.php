@@ -10,6 +10,7 @@ class HomeController extends Controller
 {
     public function index ($locale) 
     {
+        echo "PPPPPPP";
 		return view('home', compact('locale'));
     }
 }

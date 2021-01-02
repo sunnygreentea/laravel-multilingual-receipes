@@ -18,7 +18,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Logo -->
-            <a class="nav-brand mr-5" href=""><img src="{{asset('img/logo.png')}}" alt=""></a>
+            <a class="nav-brand mr-5" href="{{route('home', $locale)}}"><img src="{{asset('img/logo.png')}}" alt=""></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@
                     <li class="nav-item mx-5 {{request()->is($locale) ? 'active' : ''}}">
                         <a class="nav-link" href="{{route('home', $locale)}}">{{ __('Home') }}</a>
                     </li>
-                    <li class="nav-item  {{request()->is($locale.'/receipes') ? 'active' : ''}}">
-                        <a class="nav-link" href="{{route('receipes', $locale)}}">{{ __('Receipes') }}</a>
+                    <li class="nav-item  {{request()->is($locale.'/recipes') ? 'active' : ''}}">
+                        <a class="nav-link" href="{{route('recipes', $locale)}}">{{ __('Recipes') }}</a>
                     </li>
                     
                 </ul>

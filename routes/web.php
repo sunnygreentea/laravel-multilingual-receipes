@@ -19,8 +19,8 @@ Route::group([
   	'where' => ['locale' => '[a-zA-Z]{2}'], 
   	'middleware' => 'setlocale'], function() {
   		Route::get('/', 'HomeController@index')->name('home');
-    	Route::get('/receipes', 'ReceipeController@index')->name('receipes');
-    	Route::get('/receipes/{id}', 'ReceipeController@receipe')->name('receipe');
+    	Route::get('/recipes', 'RecipeController@index')->name('recipes');
+    	Route::get('/recipes/{id}', 'RecipeController@recipe')->name('recipe');
 
 });
 

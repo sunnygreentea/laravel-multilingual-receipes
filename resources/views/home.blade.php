@@ -6,9 +6,9 @@
 		<div class="row h-100 align-items-center">
             <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div class="home-content" >
-                    <h2>{{ __('Delicious Homemade Receipes') }}</h2>
+                    <h2>{{ __('Delicious Homemade Recipes') }}</h2>
                     <p >{{ __ ('Find the perfect food and drink ideas for every ocassion, from weeknight dinners to holiday feasts.')}}</p>
-                    <a href="{{route('receipes', $locale)}}" class="btn delicious-btn">{{ __('See Receipes') }}</a>
+                    <a href="{{route('recipes', $locale)}}" class="btn delicious-btn">{{ __('See Recipes') }}</a>
                 </div>
             </div>
         </div>
